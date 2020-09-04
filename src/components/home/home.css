@@ -1,0 +1,50 @@
+/* Home Page styling */
+.home-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Both buttons style */
+.btn-creator,
+.btn-user {
+  width: 15rem;
+  border: 2px solid;
+  border-radius: 40px;
+  color: #fff;
+}
+
+.btn-creator:hover,
+.btn-user:hover {
+  background-color: #fff;
+  border-color: #fff;
+  cursor: pointer;
+}
+
+.btn-creator:focus,
+.btn-user:focus {
+  outline: none;
+}
+
+/* Creator button */
+.btn-creator {
+  margin-bottom: 1rem;
+  background-color: rgb(247, 41, 93);
+  border-color: rgb(247, 41, 93);
+}
+
+.btn-creator:hover {
+  color: rgb(247, 41, 93);
+}
+
+/* User Button */
+.btn-user {
+  background-color: rgb(73, 204, 73);
+  border-color: rgb(73, 204, 73);
+}
+
+.btn-user:hover {
+  color: rgb(73, 204, 73);
+}
