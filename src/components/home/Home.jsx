@@ -1,0 +1,28 @@
+import React from 'react';
+import { Link } from 'react-router-dom';
+
+import bg from '../../images/abstract.jpg';
+import './home.css';
+
+function Home() {
+  return (
+    <div
+      className="home-page"
+      style={{
+        background: `url("${bg}")`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+      }}
+    >
+      <Link to="/login/creator" className="btn btn-creator">
+        Are you a creator
+      </Link>
+      <Link to="/login/user" className="btn btn-user">
+        Are you a user
+      </Link>
+    </div>
+  );
+}
+
+export default Home;
