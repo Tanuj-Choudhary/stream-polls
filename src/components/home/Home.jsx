@@ -15,10 +15,10 @@ function Home() {
         backgroundRepeat: 'no-repeat',
       }}
     >
-      <Link to="/login/creator" className="btn btn-creator">
+      <Link to="/signup/creator" className="btn btn-creator">
         Are you a creator
       </Link>
-      <Link to="/login/user" className="btn btn-user">
+      <Link to="/signup/user" className="btn btn-user">
         Are you a user
       </Link>
     </div>
