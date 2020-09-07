@@ -1,6 +1,8 @@
+// Third Party Imports
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+// Project Imports
 import bg from '../../images/abstract.jpg';
 import './home.css';
 
