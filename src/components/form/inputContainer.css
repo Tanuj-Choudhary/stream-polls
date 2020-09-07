@@ -1,0 +1,48 @@
+/*********************Input Container*********************/
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.input-container .text {
+  padding: 9px 0 13px 0;
+  color: #555555;
+  line-height: 1.5;
+  font-size: 20px;
+}
+
+/*********Inputbox wrapper************/
+.input-wrapper {
+  width: 100%;
+  background-color: #f7f7f7;
+  border: 1px solid #e6e6e6;
+  border-radius: 10px;
+}
+
+/**********Input Box***********/
+.input-wrapper input {
+  display: block;
+  width: 100%;
+  height: 60px;
+  padding: 0 20px;
+  color: #333333;
+  line-height: 1.2;
+  font-size: 18px;
+  background: transparent;
+  outline: none;
+  border: none;
+}
+
+.input-wrapper input:focus {
+  border: 1px solid #777777;
+  border-radius: 10px;
+}
+
+/******************Media Queries************************/
+@media only screen and (min-width: 768px) {
+  .input-container {
+    flex-direction: row;
+    align-items: center;
+  }
+}
