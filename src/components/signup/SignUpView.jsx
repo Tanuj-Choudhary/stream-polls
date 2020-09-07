@@ -1,9 +1,16 @@
 import React from 'react';
 
+import Form from '../form/Form';
+import InputContainer from '../form/InputContainer';
+
 import './signUpView.css';
 import bg from '../../images/abstract.jpg';
 
 function SignUpView({ onInputChange, fields, errors, onSubmit }) {
+  const heading = 'Signup';
+  const footerText = 'Already a member?';
+  const footerLink = 'Sign in';
+
   return (
     <div
       className="signup-page"
@@ -14,72 +21,38 @@ function SignUpView({ onInputChange, fields, errors, onSubmit }) {
         backgroundRepeat: 'no-repeat',
       }}
     >
-      <div className="signup-container">
-        <h1>Sign up</h1>
-        <form className="sign-up-form">
-          <div className="input-container">
-            <div className="label-text">
-              <span className="text">Email</span>
-            </div>
-            <div className="input-wrapper">
-              <input
-                id="email"
-                type="text"
-                value={fields.email}
-                onChange={(event) =>
-                  onInputChange(event.target.id, event.target.value)
-                }
-              />
-              <span style={{ color: 'red' }}>{errors['email']}</span>
-            </div>
-          </div>
-          <div className="input-container">
-            <div className="password-wrapper">
-              <div className="label-text">
-                <span className="text">Password</span>
-              </div>
-            </div>
-            <div className="input-wrapper">
-              <input
-                id="password"
-                type="password"
-                value={fields.password}
-                onChange={(event) =>
-                  onInputChange(event.target.id, event.target.value)
-                }
-              />
-              <span style={{ color: 'red' }}>{errors['password']}</span>
-            </div>
-          </div>
-          <div className="input-container">
-            <div className="label-text">
-              <span className="text">Confirm Pass</span>
-            </div>
-            <div className="input-wrapper">
-              <input
-                id="passwordConfirm"
-                type="password"
-                value={fields.passwordConfirm}
-                onChange={(event) =>
-                  onInputChange(event.target.id, event.target.value)
-                }
-              />
-              <span style={{ color: 'red' }}>{errors['passwordConfirm']}</span>
-            </div>
-          </div>
-          <div className="form-btn">
-            <button onClick={onSubmit} className="btn sign-up-btn">
-              Sign up
-            </button>
-          </div>
-          <div className="new-member">
-            <span className="text-2">Already a member?</span>
-            <a href="#1" className="text-2 bb-1">
-              Sign in
-            </a>
-          </div>
-        </form>
-      </div>
+      <Form
+        heading={heading}
+        footerText={footerText}
+        footerLink={footerLink}
+        onSubmit={onSubmit}
+      >
+        <InputContainer
+          name="Email"
+          id="email"
+          type="text"
+          value={fields.email}
+          errors={errors.email}
+          onInputChange={onInputChange}
+        />
+        <InputContainer
+          name="Password"
+          id="password"
+          type="password"
+          value={fields.password}
+          errors={errors.password}
+          onInputChange={onInputChange}
+        />
+
+        <InputContainer
+          name="Password Confirm"
+          id="passwordConfirm"
+          type="password"
+          value={fields.passwordConfirm}
+          errors={errors.passwordConfirm}
+          onInputChange={onInputChange}
+        />
+      </Form>
     </div>
   );
 }
