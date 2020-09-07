@@ -1,6 +1,10 @@
+// Third Party Imports
 import React from 'react';
 
+// Project Imports
 import Routes from '../routes/Routes';
+
+// Styles
 import './app.css';
 
 function App() {
