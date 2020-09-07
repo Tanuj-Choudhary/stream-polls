@@ -54,7 +54,7 @@
 }
 
 /*****************Media Queries *****************/
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 600px) {
   .form-container {
     padding: 62px 110px 33px 110px;
   }
