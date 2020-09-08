@@ -12,7 +12,8 @@ import bg from '../../images/abstract.jpg';
 function LoginView({ onInputChange, fields, errors, onSubmit }) {
   const heading = 'Login';
   const footerText = 'Not a member?';
-  const footerLink = 'Sign up now';
+  const footerLinkText = 'Sign up now';
+  const footerLinkAddress = '/';
 
   return (
     <div
@@ -27,7 +28,8 @@ function LoginView({ onInputChange, fields, errors, onSubmit }) {
       <Form
         heading={heading}
         footerText={footerText}
-        footerLink={footerLink}
+        footerLinkText={footerLinkText}
+        footerLinkAddress={footerLinkAddress}
         onSubmit={onSubmit}
       >
         <InputContainer

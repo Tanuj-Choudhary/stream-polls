@@ -1,10 +1,18 @@
 // Third Party imports
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 // Styles
 import './form.css';
 
-function Form({ heading, footerText, footerLink, onSubmit, children }) {
+function Form({
+  heading,
+  footerText,
+  footerLinkAddress,
+  footerLinkText,
+  onSubmit,
+  children,
+}) {
   return (
     <div className="form-container">
       <form className="sign-in-form">
@@ -20,9 +28,9 @@ function Form({ heading, footerText, footerLink, onSubmit, children }) {
 
         <div className="footer">
           <span className="text-2">{footerText}</span>
-          <a href="#1" className="text-2 bb-1">
-            {footerLink}
-          </a>
+          <Link className="text-2 bb-1" to={footerLinkAddress}>
+            {footerLinkText}
+          </Link>
         </div>
       </form>
     </div>
