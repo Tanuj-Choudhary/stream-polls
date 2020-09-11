@@ -5,6 +5,7 @@ import { Redirect } from 'react-router-dom';
 // Project Imports
 import SignUpView from './SignUpView';
 import StreamPollsAPI from '../../api/StreamPollsAPI';
+import errorController from '../error/errorController';
 
 function Login(props) {
   // Fields state
@@ -68,11 +69,12 @@ function Login(props) {
       return alert('Form is not valid');
     }
 
-    // Send data to API
-    const res = await StreamPollsAPI.post(
-      `http://127.0.0.1:8000/users/signup`,
-      fields
-    );
+    try {
+      // Send data to API
+      await StreamPollsAPI.post(`/users/signup`, fields);
+    } catch (err) {
+      errorController(err.response);
+    }
   };
 
   function render() {
