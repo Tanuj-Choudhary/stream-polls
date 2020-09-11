@@ -7,16 +7,24 @@ import Home from '../home/Home';
 import Login from '../login/Login';
 import Page404 from '../error/Page404';
 import SignUp from '../signup/SignUp';
+import Polls from '../polls/Polls';
+import MyPolls from '../mypolls/MyPolls';
+import ProtectedRoutes from './ProtectedRoutes';
+import CustomRoutes from './CustomRoutes';
 
-function Routes() {
+function Routes(props) {
   return (
     <>
       <BrowserRouter>
         <Switch>
-          <Route path="/" exact component={Home} />
-          <Route path="/login" exact component={Login} />
+          <CustomRoutes path="/" exact component={Home} />
+          <CustomRoutes path="/login" exact component={Login} />
+          <CustomRoutes path="/signup/:id" exact component={SignUp} />
+
+          <ProtectedRoutes path="/polls" exact component={Polls} />
+          <ProtectedRoutes path="/mypolls" exact component={MyPolls} />
+
           <Route path="/Page404" exact component={Page404} />
-          <Route path="/signup/:id" exact component={SignUp} />
         </Switch>
       </BrowserRouter>
     </>
