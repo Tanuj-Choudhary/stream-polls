@@ -5,7 +5,7 @@ import CreatorPollsView from './CreatorPollsView';
 import StreamPollsAPI from '../../api/StreamPollsAPI';
 import errorController from '../error/errorController';
 
-function CreatorPolls() {
+function CreatorPolls({ user }) {
   // Fields state
   const initialFields = {
     question: 'Enter your question here..',
@@ -112,6 +112,7 @@ function CreatorPolls() {
       renderFields={renderFields}
       onInputChange={onInputChange}
       onSubmit={onSubmit}
+      uniqueID={user.uniqueID}
     />
   );
 }

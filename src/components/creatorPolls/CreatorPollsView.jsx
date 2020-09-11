@@ -11,6 +11,7 @@ export default function CreatorPollsView({
   renderFields,
   onInputChange,
   onSubmit,
+  uniqueID,
 }) {
   return (
     <div className="creator-polls-page">
@@ -20,6 +21,7 @@ export default function CreatorPollsView({
             <div className="create-form-wrapper">
               <h1>Create Poll</h1>{' '}
               <div className="logout-btn-wrapper">
+                <span className="unique-id">Your Unique ID: {uniqueID}</span>
                 <Logout />
               </div>
             </div>
