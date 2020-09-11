@@ -24,10 +24,15 @@
     0 0 0 1px rgba(10, 10, 10, 0.02);
 }
 
-h1 {
+.create-form-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 50px;
+}
+
+h1 {
   font-size: 40px;
-  text-align: center;
 }
 
 .block {

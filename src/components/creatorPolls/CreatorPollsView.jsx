@@ -1,7 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
+import Logout from '../logout/Logout';
 
 import './creatorPollsView.css';
-import { Link } from 'react-router-dom';
 
 export default function CreatorPollsView({
   fields,
@@ -15,7 +17,12 @@ export default function CreatorPollsView({
       <div className="polls-container">
         <div className="polls-content">
           <form>
-            <h1>Create Poll</h1>
+            <div className="create-form-wrapper">
+              <h1>Create Poll</h1>{' '}
+              <div className="logout-btn-wrapper">
+                <Logout />
+              </div>
+            </div>
 
             <div className="block">
               <label className="label">Question</label>
