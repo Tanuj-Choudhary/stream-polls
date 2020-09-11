@@ -1,0 +1,32 @@
+.my-polls-page {
+  display: flex;
+  padding: 15px;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.my-polls-container {
+  width: 800px;
+  font-family: Nunito, sans-serif;
+  font-weight: 600;
+  line-height: 1.125;
+  color: #363636;
+}
+
+.my-polls-btns {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.refresh-btn {
+  padding: 12px 22px !important;
+  border-color: transparent;
+  background-color: #555555;
+  color: #fff;
+}
+
+.refresh-btn:hover {
+  cursor: pointer;
+}
