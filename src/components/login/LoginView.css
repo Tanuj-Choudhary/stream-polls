@@ -6,3 +6,41 @@
   justify-content: center;
   align-items: center;
 }
+
+/*Button*/
+.action-btn {
+  height: 60px;
+  width: 100%;
+  margin-top: 10px;
+  padding-top: 0 20px;
+  background-color: #333333;
+  border-radius: 10px;
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.2;
+  border: none;
+}
+
+.action-btn:hover {
+  cursor: pointer;
+}
+
+/****Footer****/
+.footer {
+  padding-top: 55px;
+  text-align: center;
+}
+
+/****Footer text ****/
+.text-2 {
+  margin-left: 5px;
+  font-size: 14px;
+  color: #999999;
+  line-height: 1.5;
+  text-decoration: none;
+}
+
+/****Border****/
+.bb-1 {
+  border-bottom: 1px solid #999999;
+}
