@@ -1,5 +1,6 @@
 // Third Party Imports
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 // Project Imports
 import Form from '../form/Form';
@@ -49,6 +50,19 @@ function LoginView({ onInputChange, fields, errors, onSubmit }) {
           errors={errors.password}
           onInputChange={onInputChange}
         />
+
+        <div className="form-btn">
+          <button onClick={onSubmit} className="btn action-btn">
+            Sign in
+          </button>
+        </div>
+
+        <div className="footer">
+          <span className="text-2">{footerText}</span>
+          <Link className="text-2 bb-1" to={footerLinkAddress}>
+            {footerLinkText}
+          </Link>
+        </div>
       </Form>
     </div>
   );
