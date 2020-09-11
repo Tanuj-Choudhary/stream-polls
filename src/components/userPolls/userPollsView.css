@@ -1,0 +1,92 @@
+.user-polls-page {
+  display: flex;
+  padding: 15px;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.user-polls-container {
+  width: 800px;
+  font-family: Nunito, sans-serif;
+  font-weight: 600;
+  line-height: 1.125;
+  color: #363636;
+}
+
+.user-polls-content {
+  background-color: #fff;
+  padding: 62px 15px 33px 15px;
+  border-radius: 10px;
+  color: #4a4a4a;
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1),
+    0 0 0 1px rgba(10, 10, 10, 0.02);
+}
+
+.code-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.headers {
+  text-align: center !important;
+  margin-bottom: 30px;
+}
+
+input {
+  width: 20rem;
+}
+
+.submit-code-btn {
+  padding: 12px 22px !important;
+  border-color: transparent;
+}
+
+.submit-code-btn:hover {
+  cursor: pointer;
+}
+
+.mb-15 {
+  margin-bottom: 10px;
+}
+
+.input-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+input {
+  width: auto;
+  margin-right: 30px;
+}
+
+.submit-vote {
+  display: flex;
+  justify-content: center;
+}
+
+.vote-btn {
+  padding: 8px 22px !important;
+  border-color: transparent;
+  background-color: #3eb991;
+  color: #fff;
+  border-radius: 2px;
+}
+
+.code-input-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.code-input-wrapper input {
+  margin: 0;
+}
+
+.error {
+  color: red;
+  font-size: 10px;
+}
