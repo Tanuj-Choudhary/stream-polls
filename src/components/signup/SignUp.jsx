@@ -40,6 +40,16 @@ function Login(props) {
       errors['passwordConfirm'] = 'Password and Password confirm should match';
     }
 
+    const r = new RegExp(
+      '^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{8,16}$'
+    );
+
+    if (!r.test(fields['password'])) {
+      formIsValid = false;
+      errors['password'] =
+        '8 to 15 characters,1 lowercase letter,  uppercase letter,  numeric digit, , special character';
+    }
+
     setErrors(errors);
     setformValid(formIsValid);
   }
@@ -72,6 +82,10 @@ function Login(props) {
     try {
       // Send data to API
       await StreamPollsAPI.post(`/users/signup`, fields);
+
+      setfields(initialFields);
+
+      alert('Successfully signed up. Login to continue');
     } catch (err) {
       errorController(err.response);
     }
