@@ -29,6 +29,10 @@
   align-items: center;
 }
 
+.logout-btn-user {
+  margin-bottom: 1rem;
+}
+
 .headers {
   text-align: center !important;
   margin-bottom: 30px;
