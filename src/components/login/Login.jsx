@@ -1,11 +1,15 @@
 // Third Party Imports
 import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';
 
 // Project Imports
 import LoginView from './LoginView';
 import StreamPollsAPI from '../../api/StreamPollsAPI';
+import errorController from '../error/errorController';
 
 function Login() {
+  const history = useHistory();
+
   // Fields state
   const initialFields = { email: '', password: '' };
   const [fields, setfields] = useState(initialFields);
@@ -62,11 +66,18 @@ function Login() {
       return alert('Form is not valid');
     }
 
-    // Send data to API
-    const res = await StreamPollsAPI.post(
-      `http://127.0.0.1:8000/users/login`,
-      fields
-    );
+    try {
+      // Send data to API
+      const res = await StreamPollsAPI.post('/users/login', fields);
+
+      // Set token in local storage
+      localStorage.setItem('token', res.data.token);
+
+      // Navigate to polls page
+      history.push('/polls');
+    } catch (err) {
+      errorController(err.response);
+    }
   };
 
   return (
