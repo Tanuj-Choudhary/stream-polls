@@ -1,0 +1,66 @@
+.poll {
+  margin-bottom: 20px;
+  background-color: #fff;
+  padding: 62px 15px 33px 15px;
+  border-radius: 10px;
+  color: #4a4a4a;
+  box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1),
+    0 0 0 1px rgba(10, 10, 10, 0.02);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 24px 46px 0;
+}
+
+h2 {
+  font-size: 35px;
+  margin-right: 1rem;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+}
+
+.delete-btn:focus {
+  outline: none;
+}
+
+.delete-btn:hover {
+  cursor: pointer;
+}
+
+.cross-icon {
+  height: 20px;
+  width: 20px;
+}
+
+.my-poll-info {
+  margin-bottom: 24px;
+  color: #7a7a7a;
+}
+.ans-block {
+  display: flex;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  color: #4a4a4a;
+}
+
+.ans-block-right {
+  display: flex;
+  color: #777777;
+}
+
+.ans-votes {
+  margin-left: 10px;
+}
+
+.total-votes {
+  margin-top: 30px;
+}
+.total-votes span {
+  color: #777777;
+}
