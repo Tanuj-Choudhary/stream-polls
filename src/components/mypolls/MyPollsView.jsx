@@ -24,12 +24,14 @@ function MyPollsView({ polls, handleRefresh, handleDelete }) {
       <div className="my-polls-container">
         <div className="my-polls-btns">
           <Link to="/polls">
-            <button className="btn poll-btn">Create Poll</button>
+            <button className="btn poll-btn my-poll-btn">Create Poll</button>
           </Link>
 
-          <button onClick={handleRefresh} className="btn refresh-btn">
-            Refresh Results
-          </button>
+          <div className="ref-button-wrapper">
+            <button onClick={handleRefresh} className="btn refresh-btn">
+              Refresh Results
+            </button>
+          </div>
         </div>
         {renderPolls()}
       </div>

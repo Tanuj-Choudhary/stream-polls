@@ -17,7 +17,12 @@
 .my-polls-btns {
   margin-bottom: 20px;
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+}
+
+.my-poll-btn,
+.refresh-btn {
+  width: 13rem;
 }
 
 .refresh-btn {
@@ -29,4 +34,16 @@
 
 .refresh-btn:hover {
   cursor: pointer;
+}
+
+@media only screen and (min-width: 600px) {
+  .my-polls-btns {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .my-poll-btn,
+  .refresh-btn {
+    width: auto;
+  }
 }
