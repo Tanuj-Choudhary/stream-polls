@@ -1,5 +1,4 @@
 const errorController = (error) => {
-  console.log(error);
   alert(error.data.message);
 };
 

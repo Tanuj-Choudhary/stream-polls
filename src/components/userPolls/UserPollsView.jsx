@@ -19,7 +19,6 @@ function UserPollsView({
     if (isButtonClicked) {
       return polls.map((poll, i) => {
         if (!user.submittedPolls.includes(poll._id)) {
-          console.log(user.submittedPolls[i], poll._id);
           return (
             <form id={poll._id} key={poll._id} className="poll">
               <div className="headers">

@@ -44,7 +44,6 @@ function CreatorPolls({ user }) {
 
     // Set state to new value
     setfields(newFields);
-    console.log(newFields);
   }
 
   // Dynamically render fields
@@ -76,7 +75,6 @@ function CreatorPolls({ user }) {
   }
 
   async function onSubmit(event) {
-    console.log('abc');
     event.preventDefault();
 
     // Axios config
