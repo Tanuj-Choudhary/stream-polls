@@ -1,6 +1,8 @@
 import React from 'react';
 
 import Poll from '../mypolls/Poll';
+import Logout from '../logout/Logout';
+
 import './userPollsView.css';
 
 function UserPollsView({
@@ -51,6 +53,9 @@ function UserPollsView({
     } else if (!isButtonClicked) {
       return (
         <form className="code-form">
+          <div className="logout-btn-user">
+            <Logout />
+          </div>
           <label className="label mb-15">Enter Creator's unique Code</label>
           <div className="code-input-wrapper">
             <input
