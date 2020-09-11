@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import Form from '../form/Form';
 import InputContainer from '../form/InputContainer';
@@ -54,6 +55,19 @@ function SignUpView({ onInputChange, fields, errors, onSubmit }) {
           errors={errors.passwordConfirm}
           onInputChange={onInputChange}
         />
+
+        <div className="form-btn">
+          <button onClick={onSubmit} className="btn action-btn">
+            Sign up
+          </button>
+        </div>
+
+        <div className="footer">
+          <span className="text-2">{footerText}</span>
+          <Link className="text-2 bb-1" to={footerLinkAddress}>
+            {footerLinkText}
+          </Link>
+        </div>
       </Form>
     </div>
   );
