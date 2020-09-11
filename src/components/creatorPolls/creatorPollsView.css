@@ -8,7 +8,7 @@
 }
 
 .polls-container {
-  max-width: 800px;
+  width: 800px;
   font-family: Nunito, sans-serif;
   font-weight: 600;
   line-height: 1.125;
