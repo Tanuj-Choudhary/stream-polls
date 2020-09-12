@@ -76,7 +76,9 @@ function Login() {
       // Navigate to polls page
       history.push('/polls');
     } catch (err) {
-      errorController(err.response);
+      if (err.response) {
+        errorController(err.response);
+      }
     }
   };
 

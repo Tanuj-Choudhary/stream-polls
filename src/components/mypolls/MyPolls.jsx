@@ -20,11 +20,17 @@ function MyPolls(props) {
         },
       };
 
-      // Fetch polls
-      const res = await StreamPollsAPI.get('/users/mypolls', config);
+      try {
+        // Fetch polls
+        const res = await StreamPollsAPI.get('/users/mypolls', config);
 
-      // Update polls
-      setpolls(res.data.data.polls);
+        // Update polls
+        setpolls(res.data.data.polls);
+      } catch (err) {
+        if (err.response) {
+          errorController(err.response);
+        }
+      }
     }
 
     fetchPolls();
@@ -54,7 +60,9 @@ function MyPolls(props) {
       alert('Poll successfully deleted');
       window.location.reload();
     } catch (err) {
-      errorController(err.response);
+      if (err.response) {
+        errorController(err.response);
+      }
     }
   }
 

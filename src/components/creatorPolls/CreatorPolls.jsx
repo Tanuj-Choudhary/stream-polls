@@ -99,7 +99,9 @@ function CreatorPolls({ user }) {
 
       alert('Poll successfully created');
     } catch (err) {
-      errorController(err.response);
+      if (err.response) {
+        errorController(err.response);
+      }
     }
   }
 
