@@ -1,24 +1,24 @@
 {
   "files": {
     "main.css": "/stream-polls/static/css/main.f00c6f96.chunk.css",
-    "main.js": "/stream-polls/static/js/main.099dded4.chunk.js",
-    "main.js.map": "/stream-polls/static/js/main.099dded4.chunk.js.map",
+    "main.js": "/stream-polls/static/js/main.3d10612b.chunk.js",
+    "main.js.map": "/stream-polls/static/js/main.3d10612b.chunk.js.map",
     "runtime-main.js": "/stream-polls/static/js/runtime-main.dbba6080.js",
     "runtime-main.js.map": "/stream-polls/static/js/runtime-main.dbba6080.js.map",
-    "static/js/2.2d2d2b10.chunk.js": "/stream-polls/static/js/2.2d2d2b10.chunk.js",
-    "static/js/2.2d2d2b10.chunk.js.map": "/stream-polls/static/js/2.2d2d2b10.chunk.js.map",
+    "static/js/2.42af5c65.chunk.js": "/stream-polls/static/js/2.42af5c65.chunk.js",
+    "static/js/2.42af5c65.chunk.js.map": "/stream-polls/static/js/2.42af5c65.chunk.js.map",
     "index.html": "/stream-polls/index.html",
-    "precache-manifest.13bd3baab116ee595308a6a698f610c7.js": "/stream-polls/precache-manifest.13bd3baab116ee595308a6a698f610c7.js",
+    "precache-manifest.55004e9eea09da69a21bc62d03edfd7f.js": "/stream-polls/precache-manifest.55004e9eea09da69a21bc62d03edfd7f.js",
     "service-worker.js": "/stream-polls/service-worker.js",
     "static/css/main.f00c6f96.chunk.css.map": "/stream-polls/static/css/main.f00c6f96.chunk.css.map",
-    "static/js/2.2d2d2b10.chunk.js.LICENSE.txt": "/stream-polls/static/js/2.2d2d2b10.chunk.js.LICENSE.txt",
+    "static/js/2.42af5c65.chunk.js.LICENSE.txt": "/stream-polls/static/js/2.42af5c65.chunk.js.LICENSE.txt",
     "static/media/abstract.jpg": "/stream-polls/static/media/abstract.41f88693.jpg",
     "static/media/close.svg": "/stream-polls/static/media/close.e3380abb.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.dbba6080.js",
-    "static/js/2.2d2d2b10.chunk.js",
+    "static/js/2.42af5c65.chunk.js",
     "static/css/main.f00c6f96.chunk.css",
-    "static/js/main.099dded4.chunk.js"
+    "static/js/main.3d10612b.chunk.js"
   ]
 }
