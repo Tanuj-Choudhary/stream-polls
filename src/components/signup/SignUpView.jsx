@@ -5,7 +5,7 @@ import Form from '../form/Form';
 import InputContainer from '../form/InputContainer';
 
 import './signUpView.css';
-import bg from '../../images/abstract.jpg';
+import bg from '../../images/abstract-min.jpg';
 
 function SignUpView({ onInputChange, fields, errors, onSubmit }) {
   const heading = 'Signup';

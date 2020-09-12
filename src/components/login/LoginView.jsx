@@ -8,7 +8,7 @@ import InputContainer from '../form/InputContainer';
 
 // Styles
 import './LoginView.css';
-import bg from '../../images/abstract.jpg';
+import bg from '../../images/abstract-min.jpg';
 
 function LoginView({ onInputChange, fields, errors, onSubmit }) {
   const heading = 'Login';

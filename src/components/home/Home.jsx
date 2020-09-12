@@ -3,7 +3,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 // Project Imports
-import bg from '../../images/abstract.jpg';
+import bg from '../../images/abstract-min.jpg';
 import './home.css';
 
 function Home() {
