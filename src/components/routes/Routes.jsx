@@ -1,6 +1,6 @@
 // Third Party Imports
 import React from 'react';
-import { Route, Switch, BrowserRouter } from 'react-router-dom';
+import { Route, Switch, BrowserRouter, Redirect } from 'react-router-dom';
 
 // Project Imports
 import Home from '../home/Home';
@@ -25,6 +25,7 @@ function Routes(props) {
           <ProtectedRoutes path="/mypolls" exact component={MyPolls} />
 
           <Route path="/Page404" exact component={Page404} />
+          <Redirect to="/Page404" />
         </Switch>
       </BrowserRouter>
     </>
