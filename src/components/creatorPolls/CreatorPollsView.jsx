@@ -34,6 +34,7 @@ export default function CreatorPollsView({
                   type="text"
                   value={fields.question}
                   onChange={onInputChange}
+                  placeholder="Enter your question here.."
                 />
               </div>
 

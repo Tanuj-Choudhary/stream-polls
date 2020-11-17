@@ -8,8 +8,8 @@ import errorController from '../error/errorController';
 function CreatorPolls({ user }) {
   // Fields state
   const initialFields = {
-    question: 'Enter your question here..',
-    answers: ['Choose an answer...'],
+    question: '',
+    answers: [''],
   };
   const [fields, setfields] = useState(initialFields);
 
@@ -55,6 +55,7 @@ function CreatorPolls({ user }) {
           type="text"
           onChange={onInputChange}
           value={el}
+          placeholder="Choose an answer..."
         />
       </div>
     ));
@@ -68,7 +69,7 @@ function CreatorPolls({ user }) {
     const newFields = { ...fields };
 
     // Add another answwer field
-    newFields.answers.push('Choose an answer');
+    newFields.answers.push('');
 
     // Set new Fields
     setfields(newFields);
